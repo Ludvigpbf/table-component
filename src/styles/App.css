@@ -165,6 +165,10 @@ span {
 .row-option-container span {
   font-size: 10px;
 }
+.row-option-container .cta-select {
+  width: 3rem;
+  margin: 0 0.2rem;
+}
 
 .toolbar-container {
   display: flex;
@@ -226,29 +230,6 @@ span {
   background-color: rgb(193, 193, 193);
 }
 
-/* .input-field {
-    border: none;
-    border-radius: 0.1rem;
-    padding: 0.5rem 0.5rem;
-    min-width: 20rem;
-    outline: none;
-    color: $text-color;
-    background-color: $bg-3-color;
-
-    &:hover {
-        opacity: 0.9;
-    }
-
-    &:focus {
-        background-color: $bg-4-color;
-
-    }
-
-    &:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0px 1000px $bg-3-color inset;
-        -webkit-text-fill-color: $text-color;
-    }
-} */
 .input-container {
   position: relative;
   margin: 0.4rem 0;
@@ -266,13 +247,13 @@ span {
   z-index: 1;
   color: rgb(115, 115, 115);
   /*    .required-asterisk {
-         position: absolute;
+      position: absolute;
 
-         right: 1.5rem;
-        transform: none;
-         color: red;
-         font-size: 1rem;
-       } */
+      right: 1.5rem;
+     transform: none;
+      color: red;
+      font-size: 1rem;
+    } */
 }
 .input-container.focused .floating-label {
   top: -0.5rem;
@@ -285,15 +266,10 @@ span {
   border: none;
   border-radius: 0.1rem;
   padding: 0.35rem 0.5rem;
-  min-width: 20rem;
   font-size: 0.8rem;
   outline: none;
   color: rgb(42, 42, 42);
-  /* background-color: $bg-3-color; */
-  /* 
-      &:focus {
-          background-color: $bg-4-color;
-      } */
+  border-radius: 0.3rem;
 }
 .input-field:hover {
   opacity: 0.9;

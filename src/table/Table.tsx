@@ -30,11 +30,11 @@ const Table = <T extends object>({
   wrapperClassName,
   wrapperRole = "table",
   columns = 5,
-  rows = 10,
+  /* rows = 10, */
   rowItemTitle = "Rows",
   toolbar = true,
   toolbarCta,
-  toolbarCtaData = [],
+  toolbarCtaData,
 
   menuHeaderClassName,
   footer = true,
@@ -58,21 +58,25 @@ const Table = <T extends object>({
   pagination = true,
   itemsPerPageOptions = [10, 20, 30], // Items per page default
   selectedRows = [],
-  onRowSelect = () => {},
+  onRowSelect,
   containerClassName,
   searchInputClassName,
   showThumbnails = false,
 }: TableProps<T>) => {
+  const effectiveData = data.length > 0 ? data : defaultData;
   const [currentPage, setCurrentPage] = useState(1); // Current page
   const [itemsPerPage, setItemsPerPage] = useState(itemsPerPageOptions[0]); // Items per page
-  const totalPages = Math.ceil(rows / itemsPerPage);
+  const totalPages = Math.ceil(effectiveData.length / itemsPerPage);
   const startIdx = (currentPage - 1) * itemsPerPage;
   const effectiveColumns = headers.length > 0 ? headers.length : columns;
-  const effectiveData = data.length > 0 ? data : defaultData;
   const currentRows = effectiveData.slice(startIdx, startIdx + itemsPerPage);
 
-  /*   const normalizedHeaders = normalizeHeaders(headers, autoGenerateHeaders, data, defaultHeaders);
-   */
+  const defaultOnRowSelect = (_rowIdx: number, rowData: T) => {
+    alert(`Row selected: ${JSON.stringify(rowData)}`);
+  };
+
+  const handleRowSelect = onRowSelect || defaultOnRowSelect;
+
   const generateHeaders = (data: T[]) => {
     if (data.length === 0) return [];
 
@@ -106,7 +110,10 @@ const Table = <T extends object>({
     }
   };
 
-  const handleItemsPerPageChange = (newItemsPerPage: number) => {
+  const handleItemsPerPageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const newItemsPerPage = parseInt(event.target.value, 10);
     setItemsPerPage(newItemsPerPage);
     setCurrentPage(1); // Återställ till första sidan när antal rader per sida ändras
   };
@@ -135,14 +142,12 @@ const Table = <T extends object>({
                 className={searchInputClassName}
               />
             </ToolbarCell>
-            {selectRows &&
-              toolbarCtaData.map((cta) => (
-                <ToolbarCell
-                  key={cta.key}
-                  toolbarCta={toolbarCta}
-                  toolbarCtaData={[cta]}
-                ></ToolbarCell>
-              ))}
+            {toolbarCta && (
+              <ToolbarCell
+                toolbarCta={toolbarCta}
+                toolbarCtaData={toolbarCtaData}
+              />
+            )}
           </ToolbarRow>
         </TableToolbar>
       )}
@@ -187,7 +192,7 @@ const Table = <T extends object>({
                   <input
                     type="checkbox"
                     checked={selectedRows?.includes(rowIdx)}
-                    onChange={() => onRowSelect(rowIdx)}
+                    onChange={() => handleRowSelect(rowIdx, item as T)}
                   />
                 </TableCell>
               )}
@@ -219,24 +224,22 @@ const Table = <T extends object>({
           {pagination ? (
             <TableRow>
               <TableCell colSpan={columns}>
-                {/* Paginering */}
-                {/* Val av antal rader per sida */}
                 <div className="row-option-container">
                   <span>Rows per page: </span>
-                  {itemsPerPageOptions.map((option) => (
-                    <button
-                      className="cta-btn"
-                      key={option}
-                      onClick={() => handleItemsPerPageChange(option)}
-                      style={{
-                        fontWeight: itemsPerPage === option ? "bold" : "normal",
-                      }}
-                    >
-                      {option}
-                    </button>
-                  ))}{" "}
+                  <select
+                    className="cta-select"
+                    name="cta-select"
+                    value={itemsPerPage}
+                    onChange={handleItemsPerPageChange}
+                  >
+                    {itemsPerPageOptions.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}{" "}
+                  </select>
                   <span>
-                    ({rows} {rowItemTitle})
+                    ({data.length} {rowItemTitle})
                   </span>
                 </div>
                 <div

@@ -36,6 +36,7 @@
     flex-direction: column;
     width: 100%;
 }
+
 .table-header {
     display: flex;
     flex-direction: row;
@@ -174,5 +175,11 @@ span {
 
     span {
         font-size: 10px;
+    }
+
+    .cta-select {
+        width: 3rem;
+        margin: 0 0.2rem;
+
     }
 }

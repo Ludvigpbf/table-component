@@ -49,7 +49,7 @@ function App() {
     username: user.login.username,
   }));
 
-  const onDelete = () => {
+  /*   const onDelete = () => {
     console.log("Delete action");
   };
 
@@ -57,15 +57,10 @@ function App() {
     console.log("Copy action");
   };
 
-  const onMove = () => {
-    console.log("Move action");
-  };
-
   const toolbarCtaData = [
     { key: 1, label: "Delete", onClick: onDelete },
     { key: 2, label: "Copy", onClick: onCopy },
-    { key: 3, label: "Move", onClick: onMove },
-  ];
+  ]; */
 
   return (
     <div className="app">
@@ -80,7 +75,8 @@ function App() {
           horizontalScroll={false}
           toolbar={true}
           toolbarCta={true}
-          toolbarCtaData={toolbarCtaData}
+          selectRows={true}
+          /*  toolbarCtaData={toolbarCtaData} */
         />
       </div>
     </div>

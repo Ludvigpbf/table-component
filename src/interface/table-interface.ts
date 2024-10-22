@@ -51,7 +51,7 @@ interface TableProps<T extends object> {
   // Select rows
   selectRows?: boolean;
   selectedRows?: number[];
-  onRowSelect?: (rowIdx: number) => void;
+  onRowSelect?: (rowIdx: number, rowData: T) => void;
   onDelete?: () => void;
   onCopy?: () => void;
   onMove?: () => void;
