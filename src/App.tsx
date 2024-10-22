@@ -1,35 +1,90 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./styles/App.css";
+import Table from "./table/Table";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface User {
+  name: {
+    first: string;
+    last: string;
+  };
+  email: string;
+  location: {
+    city: string;
+    state: string;
+  };
+  gender: string;
+  login: {
+    username: string;
+  };
+  picture: {
+    thumbnail: string;
+  };
 }
 
-export default App
+function App() {
+  const [data, setData] = useState<User[]>([]); // För att lagra hämtad data
+
+  useEffect(() => {
+    // Hämta data från randomuser.me
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://randomuser.me/api/?results=48"); // Hämta 10 användare
+        const jsonData = await response.json();
+        setData(jsonData.results); // Sätt den hämtade datan till state
+        console.log("Data fetched:", jsonData.results);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const tableData = data.map((user) => ({
+    thumbnail: user.picture.thumbnail,
+    name: `${user.name.first} ${user.name.last}`,
+    email: user.email,
+    location: `${user.location.city}, ${user.location.state}`,
+    gender: user.gender,
+    username: user.login.username,
+  }));
+
+  const onDelete = () => {
+    console.log("Delete action");
+  };
+
+  const onCopy = () => {
+    console.log("Copy action");
+  };
+
+  const onMove = () => {
+    console.log("Move action");
+  };
+
+  const toolbarCtaData = [
+    { key: 1, label: "Delete", onClick: onDelete },
+    { key: 2, label: "Copy", onClick: onCopy },
+    { key: 3, label: "Move", onClick: onMove },
+  ];
+
+  return (
+    <div className="app">
+      <div className="card-1"></div>
+      <div className="card-2">
+        <Table
+          data={tableData}
+          rowHoverColor="#cecece"
+          autoGenerateHeaders={true}
+          thumbnailClass="my-thumbnail"
+          showThumbnails={true}
+          horizontalScroll={false}
+          toolbar={true}
+          toolbarCta={true}
+          toolbarCtaData={toolbarCtaData}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default App;

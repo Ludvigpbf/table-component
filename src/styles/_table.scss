@@ -1,0 +1,178 @@
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: rgb(236, 236, 236);
+}
+
+.table-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: $text-color;
+}
+
+.table-caption {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $text-color;
+    font-size: 16px;
+    padding-left: 0.2rem;
+    margin: 0.5rem 0;
+}
+
+.table-col-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.table-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(193, 193, 193);
+
+    border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+.table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.scrollable-x {
+    overflow-x: auto;
+    min-width: 100rem;
+    white-space: nowrap;
+}
+
+.scrollable {
+
+    overflow-x: auto;
+    width: 50rem;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*  &:nth-child(even) {
+        background-color: #3d3d3d; // Alternate row background color
+    } */
+    border-bottom: 1px solid rgb(67, 67, 67);
+
+    /*  &:hover {
+        background-color: #cecece;
+    } */
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.checkbox {
+    width: auto;
+    padding: 0 8px;
+}
+
+.header-row {
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.table-cell {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0rem;
+    flex: 1;
+    min-width: 0;
+    width: 1rem;
+    padding: 0.4rem 0.25rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+.small-cell {
+    max-width: 2rem;
+    justify-content: center;
+    /* Adjust the width as needed */
+}
+
+
+
+.header-cell {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding: 0.4rem 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.table-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    border-top: 1px solid rgb(67, 67, 67);
+    background-color: rgb(193, 193, 193);
+}
+
+.table-search {
+
+    max-width: 30%;
+    margin-top: 0.8rem;
+
+    .search-input {
+        min-width: 0;
+        width: 90%;
+    }
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+.row-option-container {
+    display: flex;
+    flex-direction: row;
+
+    span {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,418 @@
+[{
+  "_id": {
+    "$oid": "65df1f18b8b6c5df96e31ad0"
+  },
+  "name": "testpack",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65df1f17b8b6c5df96e31acc"
+    },
+    {
+      "$oid": "65df1f17b8b6c5df96e31ace"
+    }
+  ],
+  "link": "thisisalink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65df2041b8b6c5df96e31ad6"
+  },
+  "name": "testpack",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65df2041b8b6c5df96e31ad2"
+    },
+    {
+      "$oid": "65df2041b8b6c5df96e31ad4"
+    }
+  ],
+  "link": "thisisalink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65df2043b8b6c5df96e31adc"
+  },
+  "name": "testpack",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65df2043b8b6c5df96e31ad8"
+    },
+    {
+      "$oid": "65df2043b8b6c5df96e31ada"
+    }
+  ],
+  "link": "thisisalink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65df2171b8b6c5df96e31ae4"
+  },
+  "name": "testpack",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65df2171b8b6c5df96e31ae0"
+    },
+    {
+      "$oid": "65df2171b8b6c5df96e31ae2"
+    }
+  ],
+  "link": "thisisalink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65df2178b8b6c5df96e31aea"
+  },
+  "name": "testpack2",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65df2178b8b6c5df96e31ae6"
+    },
+    {
+      "$oid": "65df2178b8b6c5df96e31ae8"
+    }
+  ],
+  "link": "thisisalink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65df2241b8b6c5df96e31af0"
+  },
+  "name": "testpack2",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65df2241b8b6c5df96e31aec"
+    },
+    {
+      "$oid": "65df2241b8b6c5df96e31aee"
+    }
+  ],
+  "link": "thisisalink",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e30a8731b4d8ee5cefb9de"
+  },
+  "name": "My pack",
+  "description": "New description",
+  "images": [
+    {
+      "$oid": "65e30a8731b4d8ee5cefb9dc"
+    }
+  ],
+  "link": "A link",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ad9e254361befd2de20e"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ad9f254361befd2de210"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ad9f254361befd2de212"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ad9f254361befd2de214"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ad9f254361befd2de216"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ad9f254361befd2de218"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ada0254361befd2de21a"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ada0254361befd2de21c"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ada0254361befd2de21e"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ada0254361befd2de220"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5ada0254361befd2de222"
+  },
+  "name": "oauth",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5af5e254361befd2de22c"
+  },
+  "name": "asd",
+  "description": " alkads kladskjnbas dkjbasdkjbasd jkbasn daksj dnaksjd nkajs dklasjnd kajsdn kjas da",
+  "images": [],
+  "link": "asd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b0d4254361befd2de23c"
+  },
+  "name": "New pack",
+  "description": "Test pack with images",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b163254361befd2de243"
+  },
+  "name": "asd",
+  "description": "asd",
+  "images": [],
+  "link": "asd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b19d254361befd2de245"
+  },
+  "name": "asd",
+  "description": "asd",
+  "images": [],
+  "link": "asd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b1ec254361befd2de24b"
+  },
+  "name": "asd",
+  "description": "asd",
+  "images": [],
+  "link": "asd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b251254361befd2de24d"
+  },
+  "name": "asd",
+  "description": "asd",
+  "images": [],
+  "link": "asd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b253254361befd2de24f"
+  },
+  "name": "asd",
+  "description": "asd",
+  "images": [],
+  "link": "asd",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5b282254361befd2de255"
+  },
+  "name": "New pack",
+  "description": "testing to crud a pack",
+  "images": [],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e9ae4a254361befd2de30b"
+  },
+  "name": "npm pack",
+  "description": "scss pack with mixins, variables and animations",
+  "images": [
+    {
+      "$oid": "65e9ae4a254361befd2de309"
+    }
+  ],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ea1d3e2295fa4de254f8bc"
+  },
+  "name": "tesing a new pack",
+  "description": "This is a test pack with many images",
+  "images": [
+    {
+      "$oid": "65ea1d3d2295fa4de254f8ac"
+    },
+    {
+      "$oid": "65ea1d3d2295fa4de254f8ae"
+    },
+    {
+      "$oid": "65ea1d3d2295fa4de254f8b0"
+    },
+    {
+      "$oid": "65ea1d3d2295fa4de254f8b2"
+    },
+    {
+      "$oid": "65ea1d3d2295fa4de254f8b4"
+    },
+    {
+      "$oid": "65ea1d3d2295fa4de254f8b6"
+    },
+    {
+      "$oid": "65ea1d3e2295fa4de254f8b8"
+    },
+    {
+      "$oid": "65ea1d3e2295fa4de254f8ba"
+    }
+  ],
+  "link": "www.google.se",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ea2724d19054633ac44930"
+  },
+  "name": "asdnjkkajlsd",
+  "description": "asflk",
+  "images": [],
+  "link": "dfasnlk",
+  "createdAt": {
+    "$date": "2024-03-07T20:44:20.730Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T20:44:20.731Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ea2771d19054633ac44946"
+  },
+  "name": "new pack with many images",
+  "description": "Test pack with images",
+  "images": [
+    {
+      "$oid": "65ea2771d19054633ac44932"
+    },
+    {
+      "$oid": "65ea2771d19054633ac44934"
+    },
+    {
+      "$oid": "65ea2771d19054633ac44936"
+    },
+    {
+      "$oid": "65ea2771d19054633ac44938"
+    },
+    {
+      "$oid": "65ea2771d19054633ac4493a"
+    },
+    {
+      "$oid": "65ea2771d19054633ac4493c"
+    },
+    {
+      "$oid": "65ea2771d19054633ac4493e"
+    },
+    {
+      "$oid": "65ea2771d19054633ac44940"
+    },
+    {
+      "$oid": "65ea2771d19054633ac44942"
+    },
+    {
+      "$oid": "65ea2771d19054633ac44944"
+    }
+  ],
+  "link": "https://www.npmjs.com/package/@flyckt-coding/scss-pack",
+  "createdAt": {
+    "$date": "2024-03-07T20:45:37.779Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T20:45:37.780Z"
+  },
+  "__v": 0
+}]

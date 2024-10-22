@@ -1,0 +1,84 @@
+/* .input-field {
+    border: none;
+    border-radius: 0.1rem;
+    padding: 0.5rem 0.5rem;
+    min-width: 20rem;
+    outline: none;
+    color: $text-color;
+    background-color: $bg-3-color;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:focus {
+        background-color: $bg-4-color;
+
+    }
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px $bg-3-color inset;
+        -webkit-text-fill-color: $text-color;
+    }
+} */
+.input-container {
+    position: relative;
+    margin: 0.4rem 0;
+    width: 100%;
+
+    .floating-label {
+        position: absolute;
+        top: 50%;
+        left: 0.5rem;
+        transform: translateY(-50%);
+        font-size: 0.8rem;
+        color: $text-color;
+        pointer-events: none;
+        transition: all 0.2s ease;
+        z-index: 1;
+        color: $text-color-input;
+     /*    .required-asterisk {
+            position: absolute;
+       
+            right: 1.5rem;
+           transform: none;
+            color: red;
+            font-size: 1rem;
+          } */
+    }
+
+    &.focused .floating-label {
+        top: -0.5rem;
+        left: 0.5rem;
+        font-size: 0.6rem;
+        color: $text-color-input-focus;
+    }
+   
+}
+
+.input-field {
+    border: none;
+    border-radius: 0.1rem;
+    padding: 0.35rem 0.5rem; // Justerat padding för att ge utrymme för label
+    min-width: 20rem;
+    font-size: 0.8rem;
+    outline: none;
+    color: $text-color;
+    /* background-color: $bg-3-color; */
+
+    &:hover {
+        opacity: 0.9;
+         .floating-label {
+            color: $text-color2-hover;
+         }
+    }
+/* 
+    &:focus {
+        background-color: $bg-4-color;
+    } */
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px $bg-3-color inset;
+        -webkit-text-fill-color: $text-color;
+    }
+}

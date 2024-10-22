@@ -1,0 +1,329 @@
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.3rem;
+  background-color: rgb(236, 236, 236);
+}
+
+.table-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  color: rgb(42, 42, 42);
+}
+
+.table-caption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(42, 42, 42);
+  font-size: 16px;
+  padding-left: 0.2rem;
+  margin: 0.5rem 0;
+}
+
+.table-col-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(193, 193, 193);
+  border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.scrollable-x {
+  overflow-x: auto;
+  min-width: 100rem;
+  white-space: nowrap;
+}
+
+.scrollable {
+  overflow-x: auto;
+  width: 50rem;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*  &:nth-child(even) {
+      background-color: #3d3d3d; // Alternate row background color
+  } */
+  border-bottom: 1px solid rgb(67, 67, 67);
+  /*  &:hover {
+      background-color: #cecece;
+  } */
+}
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  width: auto;
+  padding: 0 8px;
+}
+
+.header-row:hover {
+  background-color: transparent;
+}
+
+.table-cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 0rem;
+  flex: 1;
+  min-width: 0;
+  width: 1rem;
+  padding: 0.4rem 0.25rem;
+}
+.table-cell h1,
+.table-cell h2,
+.table-cell h3,
+.table-cell h4,
+.table-cell h5,
+.table-cell h6,
+.table-cell p,
+.table-cell span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 12px;
+}
+
+.small-cell {
+  max-width: 2rem;
+  justify-content: center;
+  /* Adjust the width as needed */
+}
+
+.header-cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  padding: 0.4rem 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.table-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-top: 1px solid rgb(67, 67, 67);
+  background-color: rgb(193, 193, 193);
+}
+
+.table-search {
+  max-width: 30%;
+  margin-top: 0.8rem;
+}
+.table-search .search-input {
+  min-width: 0;
+  width: 90%;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.row-option-container {
+  display: flex;
+  flex-direction: row;
+}
+.row-option-container span {
+  font-size: 10px;
+}
+
+.toolbar-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.toolbar-container .toolbar-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: none;
+  background-color: rgb(193, 193, 193);
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.toolbar-container .toolbar-row .toolbar-cell {
+  display: flex;
+  flex-direction: row;
+}
+.toolbar-container .toolbar-row .toolbar-cell .toolbar-cta-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0 0.5rem;
+}
+.toolbar-container .toolbar-row .toolbar-cell .toolbar-cta-container button {
+  padding: 0.3rem;
+  background-color: transparent;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 0.3rem;
+}
+.toolbar-container .toolbar-row .toolbar-cell .toolbar-cta-container button:hover {
+  cursor: pointer;
+  border-color: rgb(225, 225, 225);
+  background-color: rgb(225, 225, 225);
+}
+
+.table-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-top: 1px solid rgb(67, 67, 67);
+  background-color: rgb(193, 193, 193);
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  border-top: 1px solid rgb(67, 67, 67);
+  background-color: rgb(193, 193, 193);
+}
+
+/* .input-field {
+    border: none;
+    border-radius: 0.1rem;
+    padding: 0.5rem 0.5rem;
+    min-width: 20rem;
+    outline: none;
+    color: $text-color;
+    background-color: $bg-3-color;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:focus {
+        background-color: $bg-4-color;
+
+    }
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px $bg-3-color inset;
+        -webkit-text-fill-color: $text-color;
+    }
+} */
+.input-container {
+  position: relative;
+  margin: 0.4rem 0;
+  width: 100%;
+}
+.input-container .floating-label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: rgb(42, 42, 42);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 1;
+  color: rgb(115, 115, 115);
+  /*    .required-asterisk {
+         position: absolute;
+
+         right: 1.5rem;
+        transform: none;
+         color: red;
+         font-size: 1rem;
+       } */
+}
+.input-container.focused .floating-label {
+  top: -0.5rem;
+  left: 0.5rem;
+  font-size: 0.6rem;
+  color: rgb(154, 154, 164);
+}
+
+.input-field {
+  border: none;
+  border-radius: 0.1rem;
+  padding: 0.35rem 0.5rem;
+  min-width: 20rem;
+  font-size: 0.8rem;
+  outline: none;
+  color: rgb(42, 42, 42);
+  /* background-color: $bg-3-color; */
+  /* 
+      &:focus {
+          background-color: $bg-4-color;
+      } */
+}
+.input-field:hover {
+  opacity: 0.9;
+}
+.input-field:hover .floating-label {
+  color: rgb(154, 154, 164);
+}
+.input-field:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(52, 52, 56) inset;
+  -webkit-text-fill-color: rgb(42, 42, 42);
+}
+
+:root {
+  background-color: rgb(46, 46, 46);
+}
+
+.my-thumbnail {
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.app .card-1 {
+  width: 20%;
+  background-color: red;
+}
+.app .card-2 {
+  flex: 0.5;
+}/*# sourceMappingURL=App.css.map */

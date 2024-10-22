@@ -1,0 +1,43 @@
+.toolbar-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .toolbar-row {
+        display: flex;
+        flex-direction: row;
+        border-bottom: none;
+        background-color: rgb(193, 193, 193);
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+        padding: 0 1rem;
+        width: 100%;
+
+        .toolbar-cell {
+            display: flex;
+            flex-direction: row;
+
+
+            .toolbar-cta-container {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 0.2rem;
+                margin: 0 0.5rem;
+
+                button {
+                    padding: 0.3rem;
+                    background-color: transparent;
+                    border: 1px solid rgb(69, 69, 69);
+                    border-radius: 0.3rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        border-color: rgb(225, 225, 225);
+                        background-color: rgb(225, 225, 225);
+                    }
+                }
+            }
+        }
+    }
+}

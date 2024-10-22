@@ -1,0 +1,31 @@
+@import "variables";
+@import "table";
+@import "toolbar";
+@import "footer";
+@import "pagination";
+@import "input-field";
+
+:root {
+    background-color: rgb(46, 46, 46);
+}
+
+
+.my-thumbnail {
+    border-radius: 50%;
+    width: 1.5rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .card-1 {
+        width: 20%;
+        background-color: red;
+    }
+
+    .card-2 {
+     flex: 0.5;
+    }
+}
